@@ -29,7 +29,7 @@ export default {
     computed: {
         value: function () {
             return this.masked
-                ? this.field.value.replace(/./g, '•')
+                ? this.field.value.toString().replace(/./g, '•')
                 : this.field.value;
         },
         hasValue: function () {
